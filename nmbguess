@@ -1,0 +1,36 @@
+
+
+var rnd = new Random();
+int tutulan = rnd.Next(1,100);
+int hak = 3;
+
+while(hak>0)
+{
+    Console.WriteLine(tutulan);
+    Console.WriteLine("sayı:");
+    int sayi = Convert.ToInt16(Console.ReadLine());
+    hak--;
+
+    if(sayi ==tutulan)
+    {
+        Console.WriteLine("Congrulations");
+
+    }
+  else 
+  {
+    if(hak == 0)
+    {
+        Console.WriteLine("game over");
+    }
+    if(tutulan>sayi)
+    {
+        Console.WriteLine("in");
+    }
+    else
+    {
+        Console.WriteLine("out");
+    }
+  }
+
+}
+Console.WriteLine("game over");
